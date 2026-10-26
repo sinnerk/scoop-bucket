@@ -1,0 +1,23 @@
+{
+    "version": "0.1.1",
+    "description": "Read-only health check for Windows dev environments: PATH health, Microsoft Store stubs, duplicate toolchains, long-path support, cache bloat.",
+    "homepage": "https://github.com/sinnerk/envdoctor",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sinnerk/envdoctor/releases/download/v0.1.1/envdoctor.exe",
+            "hash": "3400735d6d4568315df2d4db3cacd2bb9d69b80da304da07c2ca051e83a1582d"
+        }
+    },
+    "bin": "envdoctor.exe",
+    "checkver": {
+        "github": "https://github.com/sinnerk/envdoctor"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sinnerk/envdoctor/releases/download/v$version/envdoctor.exe"
+            }
+        }
+    }
+}
