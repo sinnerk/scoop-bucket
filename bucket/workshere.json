@@ -1,0 +1,23 @@
+{
+    "version": "0.1.0",
+    "description": "Explains why code that passes locally fails in CI: case-mismatched imports, untracked files, CRLF shebangs, lockfile drift, workflow and runtime mismatches.",
+    "homepage": "https://github.com/sinnerk/workshere",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sinnerk/workshere/releases/download/v0.1.0/workshere_windows_amd64.zip",
+            "hash": "84a394f3b010e97f8adc4657efb9c5f65afa0b6a42ca3ab1cceb7d1b84f8a29d"
+        }
+    },
+    "bin": "workshere.exe",
+    "checkver": {
+        "github": "https://github.com/sinnerk/workshere"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sinnerk/workshere/releases/download/v$version/workshere_windows_amd64.zip"
+            }
+        }
+    }
+}
